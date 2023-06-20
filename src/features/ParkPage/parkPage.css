@@ -1,0 +1,33 @@
+.parkList {
+  flex-wrap: wrap;
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parkList .card {
+  background-color: #001654;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #001654;
+  border-radius: 12px;
+  margin: 0 8px;
+  min-height: 200px;
+}
+.parkList .card .image-car {
+  width: 350px;
+  height: 170px;
+}
+.parkList .card .card-text {
+  text-transform: uppercase;
+  color: white;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  background-color: #000c2d;
+  border-radius: 24px;
+  padding: 4px;
+}
+
+/*# sourceMappingURL=parkPage.css.map */
