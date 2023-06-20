@@ -1,0 +1,57 @@
+.price-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price-cards .card {
+  background-color: #001654;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid #001654;
+  border-radius: 12px;
+  margin: 24px 8px;
+  font-family: Roboto, sans-serif;
+}
+.price-cards .card .image-car {
+  margin-top: 24px;
+  width: 330px;
+  height: 160px;
+}
+.price-cards .card .card-text-top {
+  font-size: 20px;
+  margin-top: 24px;
+}
+.price-cards .card .card-info-container {
+  background-color: white;
+  width: 90%;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+.price-cards .card .card-info-container .card-text-item {
+  margin: 4px;
+  text-align: center;
+  font-size: 24px;
+}
+.price-cards .card .card-info-container .text-black {
+  color: black;
+}
+.price-cards .firstCard {
+  background-color: #5abd5a;
+}
+.price-cards .secondCard {
+  background-color: #000000;
+  color: white;
+}
+.price-cards .lastCard {
+  background-color: gold;
+}
+
+.text-price {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 48px;
+  font-family: Roboto, sans-serif;
+}
+
+/*# sourceMappingURL=pricePage.css.map */

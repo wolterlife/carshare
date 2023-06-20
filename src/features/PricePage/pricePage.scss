@@ -1,0 +1,64 @@
+.price-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    background-color: #001654;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #001654;
+    border-radius: 12px;
+    margin: 24px 8px;
+    font-family: Roboto, sans-serif;
+
+    .image-car {
+      margin-top: 24px;
+      width: 330px;
+      height: 160px;
+    }
+
+    .card-text-top {
+      font-size: 20px;
+      margin-top: 24px;
+    }
+
+    .card-info-container {
+      background-color: white;
+      width: 90%;
+      margin-bottom: 12px;
+      border-radius: 4px;
+
+      .card-text-item {
+        margin: 4px;
+        text-align: center;
+        font-size: 24px;
+      }
+
+      .text-black {
+        color: black;
+      }
+    }
+  }
+
+  .firstCard {
+    background-color: #5abd5a;
+  }
+
+  .secondCard {
+    background-color: #000000;
+    color: white;
+  }
+
+  .lastCard {
+    background-color: gold;
+  }
+}
+
+.text-price {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 48px;
+  font-family: Roboto, sans-serif;
+}
