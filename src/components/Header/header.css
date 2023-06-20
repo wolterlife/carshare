@@ -6,8 +6,13 @@
   height: 8vh;
   background-color: #001654;
 }
+.header .underline {
+  text-decoration: none;
+}
 .header .logoContainer {
   display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 .header .logoContainer .logo {
   margin-left: 12vw;
@@ -15,7 +20,7 @@
 }
 .header .logoContainer .main-text {
   margin-left: 9px;
-  font-size: 38px;
+  font-size: 24px;
   color: #ffffff;
   font-family: "Courier New", sans-serif;
 }
@@ -23,7 +28,6 @@
   color: white;
   border-color: white;
   padding-inline: 48px;
-  font-size: 16px;
   height: 8vh;
 }
 .header .menuButton:hover {
