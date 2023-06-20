@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+  background-color: #001654;
+}
+.header .logoContainer {
+  display: flex;
+}
+.header .logoContainer .logo {
+  margin-left: 12vw;
+  width: 48px;
+}
+.header .logoContainer .main-text {
+  margin-left: 9px;
+  font-size: 38px;
+  color: #ffffff;
+  font-family: "Courier New", sans-serif;
+}
+.header .menuButton {
+  color: white;
+  border-color: white;
+  padding-inline: 48px;
+  font-size: 16px;
+  height: 8vh;
+}
+.header .menuButton:hover {
+  border-color: white;
+  background-color: #001238;
+}
+.header .menuRightContainer {
+  padding: 0;
+  margin-right: 12vw;
+}
+.header .menuRightContainer .menuButton-register {
+  color: white;
+  border-color: white;
+  font-size: 16px;
+}
+.header .menuRightContainer .menuButton-register:hover {
+  border-color: white;
+  background-color: #001238;
+}
+
+/*# sourceMappingURL=header.css.map */

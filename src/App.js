@@ -1,10 +1,9 @@
-import './App.css';
-import {Button} from '@mui/material';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="App">
-      <Button variant="contained">Hello World</Button>
+      <Header />
     </div>
   );
 }

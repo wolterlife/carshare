@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 8vh;
+  background-color: #001654;
+
+
+  .logoContainer {
+    display: flex;
+
+    .logo {
+      margin-left: 12vw;
+      width: 48px;
+    }
+
+    .main-text {
+      margin-left: 9px;
+      font-size: 38px;
+      color: #ffffff;
+      font-family: "Courier New", sans-serif;
+    }
+  }
+
+  .menuButton {
+    color: white;
+    border-color: white;
+    padding-inline: 48px;
+    font-size: 16px;
+    height: 8vh;
+
+    &:hover {
+      border-color: white;
+      background-color: #001238;
+    }
+  }
+
+  .menuRightContainer {
+    padding: 0;
+    margin-right: 12vw;
+
+    .menuButton-register {
+      color: white;
+      border-color: white;
+      font-size: 16px;
+
+      &:hover {
+        border-color: white;
+        background-color: #001238;
+      }
+    }
+  }
+
+}
