@@ -2,6 +2,7 @@ import React from 'react';
 import './header.scss'
 import {Button} from '@mui/material';
 import {AccountCircle} from '@mui/icons-material';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -11,13 +12,23 @@ const Header = () => {
         <p className="main-text">CarMate</p>
       </div>
       <div>
-        <Button className="menuButton">Приступить к аренде</Button>
-        <Button className="menuButton">Цены</Button>
-        <Button className="menuButton">Автопарк</Button>
-        <Button className="menuButton" variant="text">О нас</Button>
+        <Link to={'start'}>
+          <Button className="menuButton" variant="text">Приступить к аренде</Button>
+        </Link>
+        <Link to={'price'}>
+          <Button className="menuButton" variant="text">Цены</Button>
+        </Link>
+        <Link to={'park'}>
+          <Button className="menuButton">Автопарк</Button>
+        </Link>
+        <Link to={'about'}>
+          <Button className="menuButton" variant="text">О нас</Button>
+        </Link>
       </div>
       <div className="menuRightContainer">
-        <Button className="menuButton-register" variant="outlined" startIcon={<AccountCircle />}>Регистрация</Button>
+        <Link to={'registration'}>
+          <Button className="menuButton-register" variant="outlined" startIcon={<AccountCircle/>}>Регистрация</Button>
+        </Link>
       </div>
     </div>
   );
