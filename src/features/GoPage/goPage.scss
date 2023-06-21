@@ -1,0 +1,42 @@
+.go-page {
+  height: 81vh;
+  display: flex;
+  flex-wrap: wrap;
+
+  .car-selector {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80vh;
+    margin-left: 12px;
+    .card-car {
+      font-family: Roboto, sans-serif;
+      border: 2px solid orange;
+      border-radius: 12px;
+      margin-top: 12px;
+      margin-right: 4px;
+      padding: 12px;
+
+      .car-img {
+        height: 61px;
+        width: 120px;
+      }
+
+      .car-name {
+        margin-left: 8px;
+      }
+
+      .button-location {
+        margin-top: 8px;
+        margin-left: 8px;
+        background-color: orange;
+      }
+
+      .button-select {
+        margin-top: 8px;
+        margin-left: 8px;
+        background-color: #35b434;
+      }
+    }
+  }
+}

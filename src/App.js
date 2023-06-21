@@ -8,6 +8,7 @@ import ErrorPage from './features/ErrorPage/ErrorPage';
 import {Provider} from 'react-redux';
 import {store} from './redux/store';
 import StartPage from './features/StartPage/StartPage';
+import GoPage from './features/GoPage/GoPage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<RootPage/>}/>
+          <Route path='/go' element={<GoPage/>}/>
           <Route path='/start' element={<StartPage/>}/>
           <Route path='/park' element={<ParkPage/>}/>
           <Route path='/price' element={<PricePage/>}/>

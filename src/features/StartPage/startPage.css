@@ -1,3 +1,23 @@
-
+.start-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+.start-page .payment {
+  border: 2px dotted orange;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  margin-right: 128px;
+}
+.start-page .payment .text-input {
+  margin-top: 12px;
+  text-align: center;
+}
+.start-page .payment .button-save-payment {
+  margin-top: 12px;
+  background-color: orange;
+}
 
 /*# sourceMappingURL=startPage.css.map */

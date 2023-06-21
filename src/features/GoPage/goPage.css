@@ -1,0 +1,39 @@
+.go-page {
+  height: 81vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.go-page .car-selector {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 80vh;
+  margin-left: 12px;
+}
+.go-page .car-selector .card-car {
+  font-family: Roboto, sans-serif;
+  border: 2px solid orange;
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-right: 4px;
+  padding: 12px;
+}
+.go-page .car-selector .card-car .car-img {
+  height: 61px;
+  width: 120px;
+}
+.go-page .car-selector .card-car .car-name {
+  margin-left: 8px;
+}
+.go-page .car-selector .card-car .button-location {
+  margin-top: 8px;
+  margin-left: 8px;
+  background-color: orange;
+}
+.go-page .car-selector .card-car .button-select {
+  margin-top: 8px;
+  margin-left: 8px;
+  background-color: #35b434;
+}
+
+/*# sourceMappingURL=goPage.css.map */

@@ -19,7 +19,6 @@ const Footer = () => {
           <YouTubeIcon sx={{ fontSize: 44, color: 'white' }}/>
         </a>
       </div>
-
     </div>
   );
 };
