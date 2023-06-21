@@ -11,15 +11,18 @@ const registrationSlice = createSlice({
     addAccount(state, action) {
       state.accounts.push(action.payload);
       state.isAuth = true;
-      delete action.payload.password;
       state.currentAccount = action.payload
     },
     exitAccount(state) {
       state.isAuth = false;
       state.currentAccount = {};
+    },
+    entryAcc(state, action) {
+      state.isAuth = true;
+      state.currentAccount = action.payload
     }
   }
 })
 
 export default registrationSlice.reducer
-export const {addAccount, exitAccount} = registrationSlice.actions;
+export const {addAccount, exitAccount, entryAcc} = registrationSlice.actions;
