@@ -2,9 +2,19 @@ import React from 'react';
 import './header.scss'
 import {Button} from '@mui/material';
 import {AccountCircle} from '@mui/icons-material';
+import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 import {Link} from 'react-router-dom';
+import {useDispatch, useSelector} from 'react-redux';
+import {exitAccount} from '../../redux/registrationSlice';
 
 const Header = () => {
+  const dispatch = useDispatch();
+  const { isAuth, currentAccount } = useSelector(state => state.registration)
+
+  const exitFoo = () => {
+    dispatch(exitAccount());
+  }
+
   return (
     <div className="header">
       <Link className='underline' to={'/'}>
@@ -23,14 +33,32 @@ const Header = () => {
         <Link to={'/park'}>
           <Button className="menuButton">Автопарк</Button>
         </Link>
-        <Link to={'/about'}>
-          <Button className="menuButton" variant="text">О нас</Button>
-        </Link>
       </div>
       <div className="menuRightContainer">
-        <Link to={'registration'}>
-          <Button className="menuButton-register" variant="outlined" startIcon={<AccountCircle/>}>Регистрация</Button>
-        </Link>
+        {
+          !isAuth ?
+            <Link to={'/registration'}>
+              <Button
+                className="menuButton-register"
+                variant="outlined"
+                startIcon={<AccountCircle/>}>
+                Регистрация
+              </Button>
+            </Link> :
+            <>
+              <p>{currentAccount.email}</p>
+              <Link to={'/'}>
+                <Button
+                  onClick={exitFoo}
+                  className="menuButton-register"
+                  variant="outlined"
+                  startIcon={<DisabledByDefaultIcon/>}>
+                  Выход
+                </Button>
+              </Link>
+            </>
+        }
+
       </div>
     </div>
   );

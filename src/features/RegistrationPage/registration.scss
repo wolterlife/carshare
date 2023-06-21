@@ -1,0 +1,41 @@
+.reg-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .registration {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    border: 2px dotted orange;
+    border-radius: 24px;
+
+    .text-input {
+      width: 240px;
+      margin-bottom: 12px;
+    }
+
+    .button-create {
+      margin-top: 12px;
+      width: 240px;
+      background-color: #60b62d;
+    }
+
+    .button-toSignIn {
+      width: 240px;
+      background-color: orange;
+    }
+
+    .css-xlkdtz-MuiInputBase-root-MuiInput-root:after {
+      border-color: orange;
+    }
+
+    .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root {
+      color: orange;
+    }
+  }
+}
+
+
