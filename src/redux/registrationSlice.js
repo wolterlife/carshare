@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit';
 const registrationSlice = createSlice({
   name: 'toolkit',
   initialState: {
-    accounts: [{ email: '1', password: '1', number: '123', admin: true }],
+    accounts: [{ email: 'admin', password: 'admin', number: '+375338484844', admin: true }],
     isAuth: false,
     allReview: [
       {
