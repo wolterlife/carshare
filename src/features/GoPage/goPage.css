@@ -35,5 +35,12 @@
   margin-left: 8px;
   background-color: #35b434;
 }
+.go-page .car-selector .card-car .top-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.go-page .car-selector .card-car .top-cont .icon {
+  color: deepskyblue;
+}
 
 /*# sourceMappingURL=goPage.css.map */

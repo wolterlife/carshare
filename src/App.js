@@ -11,6 +11,7 @@ import GoPage from './features/GoPage/GoPage';
 import AdminPage from './features/AdminPage/AdminPage';
 import {store} from './redux/store';
 import AddCarPage from './features/AddCarPage/AddCarPage';
+import ReviewPage from './features/ReviewPage/ReviewPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<RootPage/>}/>
+          <Route path='/review' element={<ReviewPage/>}/>
           <Route path='/go' element={<GoPage/>}/>
           <Route path='/addCar' element={<AddCarPage/>}/>
           <Route path='/start' element={<StartPage/>}/>

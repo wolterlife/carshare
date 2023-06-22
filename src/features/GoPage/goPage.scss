@@ -37,6 +37,15 @@
         margin-left: 8px;
         background-color: #35b434;
       }
+
+      .top-cont {
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            color: deepskyblue;
+        }
+      }
     }
   }
 }

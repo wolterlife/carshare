@@ -3,8 +3,16 @@ import {createSlice} from '@reduxjs/toolkit';
 const registrationSlice = createSlice({
   name: 'toolkit',
   initialState: {
-    accounts: [{email: '1', password: '1', number: '123', admin: true}],
+    accounts: [{ email: '1', password: '1', number: '123', admin: true }],
     isAuth: false,
+    allReview: [
+      {
+        carId: 1,
+        msg: 'Машинка супер, ни одной царапинки',
+        mail: 'somemail@gmail.com',
+      }
+    ],
+    selectedReview: {},
     currentAccount: {},
     payment: {},
     orders: [],
@@ -78,6 +86,7 @@ const registrationSlice = createSlice({
       state.isAuth = false;
       state.payment = {};
       state.currentAccount = {};
+      state.selectedReview = {};
     },
     entryAcc(state, action) {
       state.isAuth = true;
@@ -89,14 +98,30 @@ const registrationSlice = createSlice({
     createOrder(state, action) {
       state.orders.push(action.payload)
     },
-    addCar(state,action) {
+    addCar(state, action) {
       state.cars.push(action.payload);
     },
-    dellCar(state,action) {
+    dellCar(state, action) {
       state.cars = state.cars.filter(item => item.id !== action.payload)
+    },
+    selectForReview(state, action) {
+      state.selectedReview = action.payload;
+    },
+    addReview(state, action) {
+      state.allReview.push(action.payload)
     }
   }
 })
 
 export default registrationSlice.reducer
-export const { addCar, dellCar, createOrder, addAccount, savePayment, exitAccount, entryAcc} = registrationSlice.actions;
+export const {
+  addReview,
+  addCar,
+  dellCar,
+  createOrder,
+  addAccount,
+  savePayment,
+  exitAccount,
+  entryAcc,
+  selectForReview,
+} = registrationSlice.actions;

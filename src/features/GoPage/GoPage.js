@@ -1,15 +1,18 @@
 import React, {useEffect, useState} from 'react';
-import {useSelector} from 'react-redux';
-import {useNavigate} from 'react-router-dom';
+import {useDispatch, useSelector} from 'react-redux';
+import {Link, useNavigate} from 'react-router-dom';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import {GoogleMap, Marker, useJsApiLoader} from '@react-google-maps/api';
 import './goPage.scss'
 import {Button} from '@mui/material';
 import PopUp from '../../components/PopUp/PopUp';
+import InfoIcon from '@mui/icons-material/Info';
+import {selectForReview} from '../../redux/registrationSlice';
 
 const GoPage = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const { currentAccount, cars } = useSelector(state => state.registration)
   const [car, chooseCar] = useState({})
   const [popUpVisible, setPopUpVisible] = useState(false)
@@ -38,7 +41,12 @@ const GoPage = () => {
 
   const res = cars.map(item => (
     <div key={item.id} className='card-car'>
-      <img alt='car' className='car-img' src={item.img}/>
+      <div className='top-cont'>
+        <img alt='car' className='car-img' src={item.img}/>
+        <Link to='/review'>
+          <InfoIcon onClick={() => dispatch(selectForReview(item.id))} className='icon' />
+        </Link>
+      </div>
       <p className='car-name'>{item.model}</p>
       <p className='car-name'>{item.type}</p>
       <Button
