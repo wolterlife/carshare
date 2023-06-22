@@ -1,0 +1,48 @@
+.order-text {
+  margin-top: 24px;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  font-size: 34px;
+}
+
+.btn-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-check {
+  margin: 24px !important;
+  background-color: orange !important;;
+}
+
+.order-card {
+  margin-bottom: 8px;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button-dell {
+    margin-left: 24px;
+    background-color: #9f1a1a;
+
+    &:hover {
+      background-color: #7a1212;
+    }
+  }
+}
+
+.admin-cars {
+  display: flex;
+  align-items: center;
+
+  .car-description {
+    width: 20vw;
+  }
+
+  .car-img {
+    width: 120px;
+  }
+}
+

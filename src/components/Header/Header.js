@@ -33,6 +33,11 @@ const Header = () => {
         <Link to={'/park'}>
           <Button className="menuButton">Автопарк</Button>
         </Link>
+        {currentAccount.admin &&
+          <Link to={'/admin'}>
+            <Button className="menuButton">Админка</Button>
+          </Link>
+        }
       </div>
       <div className="menuRightContainer">
         {

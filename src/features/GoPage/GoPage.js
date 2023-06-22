@@ -66,7 +66,7 @@ const GoPage = () => {
           isLoaded={isLoaded}
           zoom={12}
         >
-          {cars.map(item => <Marker position={item.coords}/>)}
+          {cars.map(item => <Marker key={item.coords.lat} position={item.coords}/>)}
         </GoogleMap>
         <div className="car-selector">
           {res}

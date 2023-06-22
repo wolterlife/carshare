@@ -38,13 +38,6 @@ const registrationSlice = createSlice({
         coords: { lat: 55.175, lng: 30.250 },
       },
       {
-        id: 5,
-        img: '/img/vw.png',
-        model: 'VOLKSWAGEN POLO',
-        type: 'Эконом',
-        coords: { lat: 55.185, lng: 30.249 },
-      },
-      {
         id: 6,
         img: '/img/almera.png',
         model: 'NISSAN ALMERA',
@@ -95,9 +88,15 @@ const registrationSlice = createSlice({
     },
     createOrder(state, action) {
       state.orders.push(action.payload)
+    },
+    addCar(state,action) {
+      state.cars.push(action.payload);
+    },
+    dellCar(state,action) {
+      state.cars = state.cars.filter(item => item.id !== action.payload)
     }
   }
 })
 
 export default registrationSlice.reducer
-export const {createOrder, addAccount, savePayment, exitAccount, entryAcc} = registrationSlice.actions;
+export const { addCar, dellCar, createOrder, addAccount, savePayment, exitAccount, entryAcc} = registrationSlice.actions;

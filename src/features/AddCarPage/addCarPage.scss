@@ -1,0 +1,55 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: Roboto, sans-serif;
+
+  .form-add {
+    display: flex;
+    flex-direction: column;
+    border: 2px dotted orange;
+    border-radius: 12px;
+    padding: 12px;
+
+    .text-input {
+      margin-top: 8px;
+    }
+
+    .radio {
+      margin-top: 12px;
+    }
+
+    .button-addCar {
+      margin-bottom: 12px;
+      background-color: #35b434;
+    }
+
+    .button-back {
+      background-color: #9f1a1a;
+    }
+
+    .css-xlkdtz-MuiInputBase-root-MuiInput-root:after {
+      border-color: orange;
+    }
+
+    .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root {
+      color: orange;
+    }
+  }
+
+  .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
+    color: orange;
+  }
+
+  .css-u4tvz2-MuiFormLabel-root {
+    color: orange;
+  }
+
+  .css-u4tvz2-MuiFormLabel-root.Mui-focused {
+    color: orange;
+  }
+
+}
+
+

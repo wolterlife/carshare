@@ -1,0 +1,103 @@
+.overlayAdmin {
+  font-family: Roboto, sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: visible;
+  opacity: 1;
+  z-index: 99;
+}
+
+.popupAdmin {
+  margin: 0px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: fit-content;
+  position: relative;
+}
+
+.popupAdmin h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popupAdmin .close {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popupAdmin .content {
+  padding: 12px;
+  max-height: 30%;
+  overflow: auto;
+  border: 2px solid #35b434;
+  border-radius: 12px;
+
+  .slider {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .top {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .card-car {
+      font-family: Roboto, sans-serif;
+      margin-top: 12px;
+      margin-right: 4px;
+      padding: 12px;
+
+      .car-img {
+        height: 61px;
+        width: 120px;
+      }
+
+      .car-name {
+        margin-left: 8px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .button-select {
+    background-color: #35b434;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .button-change {
+    background-color: #288a28;
+
+    &:hover {
+      background-color: #278126;
+    }
+  }
+
+  .button-dell {
+    background-color: #7a1212;
+
+    &:hover {
+      background-color: #540d0d;
+    }
+  }
+
+}
+
+
+

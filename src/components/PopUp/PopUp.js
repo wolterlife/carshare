@@ -2,11 +2,12 @@ import React, {useEffect, useState} from 'react';
 import './popUp.scss'
 import {Button, FormControl, FormLabel, Radio, RadioGroup, Slider} from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import {useDispatch} from 'react-redux';
+import {useDispatch, useSelector} from 'react-redux';
 import {createOrder} from '../../redux/registrationSlice';
 import {useNavigate} from 'react-router-dom';
 
 const PopUp = ({ setPopUp, car }) => {
+  const {payment} = useSelector(state => state.registration)
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [maxSlider, setMaxSlider] = useState(59);
@@ -43,13 +44,13 @@ const PopUp = ({ setPopUp, car }) => {
     }
   }, [radio, slider])
 
-
   const sendOrder = () => {
     const order = {
       car,
       price,
       radio,
       slider,
+      payment: payment.number,
     }
     dispatch(createOrder(order));
     setButtonDis(true);
@@ -62,7 +63,7 @@ const PopUp = ({ setPopUp, car }) => {
     <div id="popup1" className="overlay">
       <div className="popup">
         <h2>Финальное оформление</h2>
-        <button onClick={() => setPopUp(false)} className="close">X</button>
+        <button disabled={buttonDis} onClick={() => setPopUp(false)} className="close">X</button>
         <div className="content">
           <div className='top'>
             <div className='card-car'>

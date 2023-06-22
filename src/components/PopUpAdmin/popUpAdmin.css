@@ -1,4 +1,4 @@
-.overlay {
+.overlayAdmin {
   font-family: Roboto, sans-serif;
   position: fixed;
   top: 0;
@@ -12,23 +12,22 @@
   z-index: 99;
 }
 
-.popup {
-  margin: 70px auto;
+.popupAdmin {
+  margin: 0px auto;
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
+  width: fit-content;
   position: relative;
-  transition: all 5s ease-in-out;
 }
 
-.popup h2 {
+.popupAdmin h2 {
   margin-top: 0;
   color: #333;
   font-family: Tahoma, Arial, sans-serif;
 }
 
-.popup .close {
+.popupAdmin .close {
   border: 0;
   background-color: transparent;
   position: absolute;
@@ -41,48 +40,53 @@
   color: #333;
 }
 
-.popup .content {
+.popupAdmin .content {
+  padding: 12px;
   max-height: 30%;
   overflow: auto;
   border: 2px solid #35b434;
   border-radius: 12px;
 }
-.popup .content .slider {
+.popupAdmin .content .slider {
   margin-left: 10%;
   width: 80%;
 }
-.popup .content .top {
+.popupAdmin .content .top {
   margin-top: 12px;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
-.popup .content .top .card-car {
+.popupAdmin .content .top .card-car {
   font-family: Roboto, sans-serif;
   margin-top: 12px;
   margin-right: 4px;
   padding: 12px;
 }
-.popup .content .top .card-car .car-img {
+.popupAdmin .content .top .card-car .car-img {
   height: 61px;
   width: 120px;
 }
-.popup .content .top .card-car .car-name {
+.popupAdmin .content .top .card-car .car-name {
   margin-left: 8px;
   margin-top: 8px;
 }
-.popup .content .button-select {
+.popupAdmin .content .button-select {
   background-color: #35b434;
   width: 100%;
   padding: 12px;
 }
-.popup .content .css-53tbrc-MuiSlider-root {
-  color: #35b434;
+.popupAdmin .content .button-change {
+  background-color: #288a28;
 }
-.popup .content .css-vqmohf-MuiButtonBase-root-MuiRadio-root.Mui-checked {
-  color: #35b434;
+.popupAdmin .content .button-change:hover {
+  background-color: #278126;
 }
-.popup .content .css-u4tvz2-MuiFormLabel-root {
-  color: #35b434;
+.popupAdmin .content .button-dell {
+  background-color: #7a1212;
+}
+.popupAdmin .content .button-dell:hover {
+  background-color: #540d0d;
 }
 
 /*# sourceMappingURL=popUpAdmin.css.map */
