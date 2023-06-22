@@ -1,0 +1,54 @@
+.rev-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+}
+.rev-page .rev-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid green;
+  border-radius: 12px;
+  margin-top: 12px;
+  padding: 8px;
+  margin-left: 48px;
+}
+.rev-page .rev-form .text-input {
+  margin-top: 12px;
+}
+.rev-page .rev-form .button-send {
+  margin-top: 8px;
+  background-color: green;
+}
+.rev-page .rev-form .css-xlkdtz-MuiInputBase-root-MuiInput-root:after {
+  border-color: green;
+}
+.rev-page .rev-form .css-1r74e2h-MuiFormLabel-root-MuiInputLabel-root {
+  color: green;
+}
+.rev-page .rev-form .css-6sqycs-MuiInputBase-root-MuiInput-root:after {
+  border-bottom-color: green;
+}
+
+.review-cont {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.review-cont .card-box {
+  width: 30vw;
+  padding: 4px;
+  border: 2px solid orange;
+  border-radius: 12px;
+  margin-top: 12px;
+}
+.review-cont .card-box .mail {
+  color: #35b434;
+}
+.review-cont .card-box .msg {
+  margin-left: 8px;
+}
+
+/*# sourceMappingURL=reviewPage.css.map */
