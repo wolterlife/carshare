@@ -33,7 +33,7 @@ const PricePage = () => {
           <div className='card-info-container'>
             <p className='card-text-item'>1 день - 72 BYN</p>
             <p className='card-text-item'>1 час - 27 BYN</p>
-            <p className='card-text-item'>1 минута - 0.36</p>
+            <p className='card-text-item'>1 минута - 0.36 BYN</p>
           </div>
         </div>
       </div>
